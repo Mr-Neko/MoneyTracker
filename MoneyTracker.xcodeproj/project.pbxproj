@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10001 /* MoneyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20001 /* MoneyTrackerApp.swift */; };
+		E10002 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20002 /* Transaction.swift */; };
+		E10003 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20003 /* TransactionViewModel.swift */; };
+		E10004 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20004 /* MainTabView.swift */; };
+		E10005 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20005 /* HomeView.swift */; };
+		E10006 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20006 /* TransactionListView.swift */; };
+		E10007 /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20007 /* TransactionRowView.swift */; };
+		E10008 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20008 /* StatisticsView.swift */; };
+		E10009 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20009 /* AddTransactionView.swift */; };
+		E10010 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20010 /* ImportView.swift */; };
+		E10011 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20011 /* Extensions.swift */; };
+		E10012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20012 /* Assets.xcassets */; };
+		E10013 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20013 /* Preview Assets.xcassets */; };
+		E10014 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20014 /* CSVParser.swift */; };
+		E10015 /* BillStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20015 /* BillStorageManager.swift */; };
+		E10016 /* EmailBillFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20016 /* EmailBillFetcher.swift */; };
+		E10017 /* AppIntentsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20017 /* AppIntentsProvider.swift */; };
+		E10018 /* FinanceKitMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20018 /* FinanceKitMonitor.swift */; };
+		E10019 /* AutoSyncScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20019 /* AutoSyncScheduler.swift */; };
+		E10020 /* ThirdPartyPaySync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20020 /* ThirdPartyPaySync.swift */; };
+		E10021 /* LocationTriggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20021 /* LocationTriggerManager.swift */; };
+		E10022 /* NotificationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20022 /* NotificationParser.swift */; };
+		E10023 /* ShortcutAutomationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20023 /* ShortcutAutomationManager.swift */; };
+		E10024 /* ImportHelperViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20024 /* ImportHelperViews.swift */; };
+		E10025 /* ICloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20025 /* ICloudSyncManager.swift */; };
+		E10026 /* ICloudSyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20026 /* ICloudSyncView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E20001 /* MoneyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerApp.swift; sourceTree = "<group>"; };
+		E20002 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		E20003 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		E20004 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E20005 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E20006 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		E20007 /* TransactionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRowView.swift; sourceTree = "<group>"; };
+		E20008 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		E20009 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		E20010 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		E20011 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E20012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20013 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E20014 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		E20015 /* BillStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillStorageManager.swift; sourceTree = "<group>"; };
+		E20016 /* EmailBillFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailBillFetcher.swift; sourceTree = "<group>"; };
+		E20017 /* AppIntentsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntentsProvider.swift; sourceTree = "<group>"; };
+		E20018 /* FinanceKitMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceKitMonitor.swift; sourceTree = "<group>"; };
+		E20019 /* AutoSyncScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSyncScheduler.swift; sourceTree = "<group>"; };
+		E20020 /* ThirdPartyPaySync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyPaySync.swift; sourceTree = "<group>"; };
+		E20021 /* LocationTriggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTriggerManager.swift; sourceTree = "<group>"; };
+		E20022 /* NotificationParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationParser.swift; sourceTree = "<group>"; };
+		E20023 /* ShortcutAutomationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutAutomationManager.swift; sourceTree = "<group>"; };
+		E20024 /* ImportHelperViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportHelperViews.swift; sourceTree = "<group>"; };
+		E20025 /* ICloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudSyncManager.swift; sourceTree = "<group>"; };
+		E20026 /* ICloudSyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudSyncView.swift; sourceTree = "<group>"; };
+		E20027 /* MoneyTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneyTracker.entitlements; sourceTree = "<group>"; };
+		E30001 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E40001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E50001 = {
+			isa = PBXGroup;
+			children = (
+				E50002 /* MoneyTracker */,
+				E50006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E50002 /* MoneyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E20001 /* MoneyTrackerApp.swift */,
+				E50003 /* Models */,
+				E50004 /* ViewModels */,
+				E50005 /* Views */,
+				E50007 /* Utils */,
+				E20012 /* Assets.xcassets */,
+				E50008 /* Preview Content */,
+				E20027 /* MoneyTracker.entitlements */,
+			);
+			path = MoneyTracker;
+			sourceTree = "<group>";
+		};
+		E50003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E20002 /* Transaction.swift */,
+				E20014 /* CSVParser.swift */,
+				E20015 /* BillStorageManager.swift */,
+				E20016 /* EmailBillFetcher.swift */,
+				E20017 /* AppIntentsProvider.swift */,
+				E20018 /* FinanceKitMonitor.swift */,
+				E20019 /* AutoSyncScheduler.swift */,
+				E20020 /* ThirdPartyPaySync.swift */,
+				E20021 /* LocationTriggerManager.swift */,
+				E20022 /* NotificationParser.swift */,
+				E20023 /* ShortcutAutomationManager.swift */,
+				E20025 /* ICloudSyncManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E50004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E20003 /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E50005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20004 /* MainTabView.swift */,
+				E20005 /* HomeView.swift */,
+				E20006 /* TransactionListView.swift */,
+				E20007 /* TransactionRowView.swift */,
+				E20008 /* StatisticsView.swift */,
+				E20009 /* AddTransactionView.swift */,
+				E20010 /* ImportView.swift */,
+				E20024 /* ImportHelperViews.swift */,
+				E20026 /* ICloudSyncView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E50006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E30001 /* MoneyTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E50007 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E20011 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E50008 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E20013 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60001 /* MoneyTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80002 /* Build configuration list for PBXNativeTarget "MoneyTracker" */;
+			buildPhases = (
+				E70001 /* Sources */,
+				E40001 /* Frameworks */,
+				E70002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyTracker;
+			productName = MoneyTracker;
+			productReference = E30001 /* MoneyTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					E60001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E80001 /* Build configuration list for PBXProject "MoneyTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = E50001;
+			productRefGroup = E50006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60001 /* MoneyTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E70002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10012 /* Assets.xcassets in Resources */,
+				E10013 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E70001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10001 /* MoneyTrackerApp.swift in Sources */,
+				E10002 /* Transaction.swift in Sources */,
+				E10003 /* TransactionViewModel.swift in Sources */,
+				E10004 /* MainTabView.swift in Sources */,
+				E10005 /* HomeView.swift in Sources */,
+				E10006 /* TransactionListView.swift in Sources */,
+				E10007 /* TransactionRowView.swift in Sources */,
+				E10008 /* StatisticsView.swift in Sources */,
+				E10009 /* AddTransactionView.swift in Sources */,
+				E10010 /* ImportView.swift in Sources */,
+				E10011 /* Extensions.swift in Sources */,
+				E10014 /* CSVParser.swift in Sources */,
+				E10015 /* BillStorageManager.swift in Sources */,
+				E10016 /* EmailBillFetcher.swift in Sources */,
+				E10017 /* AppIntentsProvider.swift in Sources */,
+				E10018 /* FinanceKitMonitor.swift in Sources */,
+				E10019 /* AutoSyncScheduler.swift in Sources */,
+				E10020 /* ThirdPartyPaySync.swift in Sources */,
+				E10021 /* LocationTriggerManager.swift in Sources */,
+				E10022 /* NotificationParser.swift in Sources */,
+				E10023 /* ShortcutAutomationManager.swift in Sources */,
+				E10024 /* ImportHelperViews.swift in Sources */,
+				E10025 /* ICloudSyncManager.swift in Sources */,
+				E10026 /* ICloudSyncView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EA0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = N73FKJ73T3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N73FKJ73T3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoneyTracker/MoneyTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "记账本";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MoneyTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoneyTracker/MoneyTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "记账本";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MoneyTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E80001 /* Build configuration list for PBXProject "MoneyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0001 /* Debug */,
+				EA0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80002 /* Build configuration list for PBXNativeTarget "MoneyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0003 /* Debug */,
+				EA0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90001 /* Project object */;
+}
